@@ -7,6 +7,7 @@
 }
 body{
       direction: rtl;
+      margin:0;
 }
 html{
       scroll-behavior:smooth;
@@ -15,13 +16,30 @@ html{
       main{
             grid-template-columns:1fr 1fr;
       }
+      .p1{
+            max-width:500px;
+            margin:5px;
+      }
+       .p2{
+            max-width:500px;
+            margin:5px;
+      }
+       .p3{
+            max-width:500px;
+            margin:5px;
+      }
+      .images6{
+            max-width:400px;
+      }
 }
 header{
       width:100%;
-      padding:15px;
-      text-align:left;
-      align-items: center;
+      padding:20px;
+      display: flex;
+      justify-content:flex-start;
       background-color:#f0f8ff;
+      position: relative;
+      margin:0;
 
 }
 @font-face {
@@ -30,18 +48,20 @@ header{
 }
 .font1{
       padding:5px;
-      font-size:40px;
+      font-size:clamp(22px,5vw,34px);
       color:rgb(4, 70, 131);
       font-family:bti, Tahoma, Arial, sans-serif;
       margin:5px 5px;
       text-align:right;
+      right:10px;
+      
 }
 .font2{
       color:rgb(4, 70, 131);
-      font-family:bti Tahoma, Arial, sans-serif;
+      font-family:bti,Tahoma, Arial, sans-serif;
       text-align:center;
       font-size:35px;
-      padding:40px;
+      padding:clamp(10px,4vw,40px);
 }
 nav{
    display: flex;   
@@ -51,6 +71,7 @@ nav{
 }
 .btn{
       padding:10px 15px;
+      margin-top:0;
       font-size:16px;
       color:rgb(4, 70,131);
       font-family:bti;
@@ -59,43 +80,39 @@ nav{
 
 main{
        display:grid;
-       gap:20px;
+       grid-template-columns:repeat(2,1fr);
+       gap:15px;
+       align-items: start;
 }
 .p1{
     width:100%;
-    max-width:500px;
     height:auto;
-    background-color:#FFF5BA;
-    margin:10px 0;
+    background-color:#fff5ba;
     border-radius:30px 1px 30px 1px;
     font-family:bti;
-    font-size:25px;
+    font-size:clamp(14px,2vw,18px);
     text-align:right;
     color:rgb(4, 70, 131);
     padding:20px;
 }
 .p2{
     width:100%;
-    max-width:500px;
     height:auto;
     background-color:#FBE4FF;
-    margin:10px 0;
     border-radius:30px 1px 30px 1px;
     font-family:bti;
-    font-size:25px;
+    font-size:clamp(16px,2.5vw,20px);
     text-align:right;
     color:rgb(4, 70, 131);
     padding:20px;
 }
 .p3{
     width:100%;
-    max-width:500px;
     height:auto ;
     background-color:#FFCECE;
-    margin:10px 0;
     border-radius:30px 1px 30px 1px;
     font-family:bti;
-    font-size:25px;
+    font-size:clamp(16px,2.5vw,20px);
     text-align:right;
     color:rgb(4, 70, 131);
     padding:20px;
@@ -106,15 +123,6 @@ main{
       height:auto;
       display:block;
       margin:15px auto ; 
-}
-.images2{
-      width:100%;
-      max-width:500px;
-      height:auto;
-      margin:40px;
-      border-radius:10px 30px 60px 120px;
-      box-shadow:15px 30px rgb(196, 226, 255);
-      
 }
 .images3{
      width:80px;
@@ -135,9 +143,8 @@ main{
 }
 .images6{
       width:100%;
-      max-width:500px;
       height:auto;
-      margin:15px;
+      margin:10px 0;
       border-radius:10px 30px 60px 120px;
       box-shadow:15px 30px rgb(196, 226, 255);
       }
@@ -147,37 +154,47 @@ main{
       display: block;
       margin:10px auto;
 }  
+.imgbox{
+      display: flex;
+      gap:10px;
+      flex-wrap:wrap;
+}
 .p4{
       padding:10px;
       margin:10px;
       outline:0px ;
       text-align:right;
       font-family:bti;
-      font-size:30px;
+      font-size:clamp(17px,2.5vw,20px);
       color:rgb(4,70,131);
       display:flex;
+      flex-direction: column;
       direction:rtl;
       gap:0px;
-      flex-wrap: wrap;
+      flex-wrap:wrap;
 }
 .p44{
+      display: block;
+      width:100%;
       padding:10px;
-      font-size:40px;
+      font-size:clamp(22px,4vw,34px);
       font-family:bti;
       color:rgb(202, 73, 34) ;
 }
 footer{
       display:flex;
       align-items: center;
-      justify-content:flex-start;
-      flex-wrap:wrap;
-      gap:30px;
+      justify-content:space-between;
+      flex-wrap:nowrap;
+      gap:15px;
       padding:20px;
+      clear: both;
 }
 .p5{
-    width:100%;
-    max-width:400px;
+    width:auto;
+    max-width:250px;
     height:auto;
+    flex:1;
     font-family:bti;
     font-size:18px;
     color:rgb(4, 70, 131);
@@ -191,8 +208,9 @@ footer{
       border-radius:50px 50px 50px 50px;  
 }
 .p6{
-    width:100%;
-    max-width:400px;
+    width:auto;
+    max-width:250px;
+    flex:1;
     height:auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:18px;
@@ -204,20 +222,104 @@ footer{
     border-radius:20px;
 }
 .tem{
-      display: flex;
-      align-items: center;
+      display:flex;
+      align-items:center;
       gap:10px ;
 }
 .p7{
    text-align: center;
    font-family: bti;
-   font-size:25px;
-   padding:20px;
-   margin:0px;
+   font-size:clamp(16px,2.5vw,22px);
+   padding:30px;
+   margin:0;
    width:100%;
    height:auto;
    display: block;
    background-color: #f0f8ff;
    color:rgb(4, 70, 131);
    clear: both;
+}
+@media(max-width:480px){
+      header{
+      text-align: left;
+      }
+      main{
+      grid-template-columns:repeat(2,1fr);
+      gap:10px;
+      }
+      footer{
+            flex-wrap:wrap;
+            justify-content:space-between;
+            gap:10px;
+      }
+      .p1{
+            margin-top:15px;
+            width:90%;
+            margin-bottom:8px;
+            font-size:14px;
+            padding:0 10px;
+      }
+      .p2{
+            width:90%;
+            margin-bottom:8px;
+            font-size:14px;
+            padding:0 10px;
+      }
+      .p3{
+            width:90%;
+            margin-bottom:8px;
+            font-size:14px;
+            padding:0 10px;
+      }
+       .p4{
+            font-size:15px;
+      }
+      .p5{
+            max-width:45%;
+            font-size:10px;
+            padding:10px;
+      }
+      .p6{
+             max-width:45%;
+             font-size:10px;
+             padding:10px;
+      }
+      .p7{
+            font-size:10px;
+            padding:10px;
+      }
+      .p44{
+            font-size:18px;
+      }
+      .font1{
+            text-align: right;
+            font-size:20px;
+      }
+      .btn{
+            font-size:12px;
+            padding:8px;
+      }
+      .images1{
+            width:40%;
+      }
+      .images3{
+            width:40px;
+      }
+      .images4{
+            width:40px;
+      }
+      .images5{
+            width:120px;
+      }
+      .images6{
+            width:60%;
+            max-width:100%;
+            margin:5px 0;
+      }
+      .images7{
+            width:40px;
+      }
+      .imgbox{
+            flex-direction: column;
+      }
 }
