@@ -291,9 +291,10 @@ footer{
             line-height:1.8;
       }
       .p5{
-            max-width:50%;
+            max-width:60%;
             font-size:7px;
             padding:10px;
+            line-height:1.3;
       }
       .p6{
              max-width:50%;
@@ -312,7 +313,7 @@ footer{
             padding:4px;
       }
       .images1{
-            width:40%;
+            width:50%;
       }
       .images3{
             width:35px;
