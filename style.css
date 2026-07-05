@@ -5,7 +5,7 @@
       padding:0px;
 }
 body{
-      direction: rtl;
+
       margin:0;
 }
 html{
@@ -93,7 +93,7 @@ main{
 .p1{
     width:100%;
     height:auto;
-    background-color:#fff5ba;
+    background-color:#edfafc;
     border-radius:30px 1px 30px 1px;
     font-family:bti;
     font-size:clamp(14px,2vw,18px);
@@ -104,7 +104,7 @@ main{
 .p2{
     width:100%;
     height:auto;
-    background-color:#FBE4FF;
+    background-color:#edfafc;
     border-radius:30px 1px 30px 1px;
     font-family:bti;
     font-size:clamp(16px,2.5vw,20px);
@@ -115,7 +115,7 @@ main{
 .p3{
     width:100%;
     height:auto ;
-    background-color:#FFCECE;
+    background-color:#edfafc;
     border-radius:30px 1px 30px 1px;
     font-family:bti;
     font-size:clamp(16px,2.5vw,20px);
@@ -125,7 +125,7 @@ main{
 }
 .images1{
       width:100%;
-      max-width:120px;
+      max-width:130px;
       height:auto;
       display:block;
       margin:15px auto ; 
